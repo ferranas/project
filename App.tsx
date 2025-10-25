@@ -74,31 +74,7 @@ export default function App() {
     if (navigator.share) {
       setCanShare(true);
     }
-
-    // Dynamically update manifest to ensure correct start_url for PWA
-    const manifestLink = document.querySelector('link[rel="manifest"]');
-    if (manifestLink) {
-        const manifest = {
-          name: "Image Cropper",
-          short_name: "Image Cropper",
-          description: "Crop your images to a 3:4 aspect ratio.",
-          start_url: window.location.href,
-          display: "standalone",
-          background_color: "#111827",
-          theme_color: "#9333ea",
-          icons: [
-            {
-              src: "/icon.svg",
-              sizes: "any",
-              type: "image/svg+xml"
-            }
-          ]
-        };
-        const manifestJson = JSON.stringify(manifest);
-        const manifestDataUrl = `data:application/json;charset=utf-8,${encodeURIComponent(manifestJson)}`;
-        manifestLink.setAttribute('href', manifestDataUrl);
-    }
-    
+     
     // Detect iOS
     const isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
     // Detect if the app is launched from the home screen
