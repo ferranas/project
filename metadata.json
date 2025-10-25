@@ -1,0 +1,5 @@
+{
+  "name": "Product Crop AI",
+  "description": "An application that uses AI to detect the main product in a screenshot, automatically cropping the image to focus on it.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Image Cropper",
+  "short_name": "Image Cropper",
+  "description": "Crop your images to a 3:4 aspect ratio.",
+  "start_url": "https://ai.studio/apps/drive/1nWnJf3xpa-2lXv82I_1Smz20a-DrZRuR"
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#9333ea",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
